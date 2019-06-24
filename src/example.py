@@ -26,10 +26,11 @@ def welcome():
     # Draw Welcome messages
     enable_stroke()
     set_stroke_color(0, 0, 0, 1)
-    if random.randint(1,2)==1:
-        draw_text("Communists", x - 30, y - 5)
-        draw_text("are Figs", x - 25, y + 15)
+    if random.randint(1,6)>5:
+        letter="a"
     else:
-        draw_text("Communists", x - 30, y - 5)
-        draw_text("are Fags", x - 25, y + 15)
+        letter="i"
+    draw_text("Communists", x - 30, y - 5)
+    draw_text("are F"+letter+"gs", x - 25, y + 15)
+
 start_graphics(welcome)
